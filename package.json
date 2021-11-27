@@ -1,0 +1,37 @@
+{
+    "name": "nodejs-blog",
+    "version": "1.0.0",
+    "repository": "https://github.com/ThunderAl197/nodejs-blog.git",
+    "author": "ThunderAl <alexp9712@gmail.com>",
+    "description": "Simple nodejs blog app",
+    "license": "MIT",
+    "scripts": {
+        "build:dev": "webpack --node-env development",
+        "build:watch": "nodemon -w webpack.config.js -x yarn build:dev -- --watch",
+        "app": "node ./dist/app.js"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/preset-env": "^7.3.1",
+        "@types/commander": "^2.12.2",
+        "@types/pino": "^6.3.12",
+        "babel-loader": "^8.0.5",
+        "file-loader": "^6.2.0",
+        "html-loader": "^3.0.1",
+        "nodemon": "^2.0.15",
+        "ts-loader": "^9.2.6",
+        "twig-loader": "^0.5.5",
+        "typescript": "^4.5.2",
+        "webpack": "^5.64.4",
+        "webpack-cli": "^3.2.1",
+        "webpack-node-externals": "^3.0.0"
+    },
+    "dependencies": {
+        "commander": "^8.3.0",
+        "fastify": "^3.24.0",
+        "pg": "^8.7.1",
+        "pino": "^6.13.3",
+        "pino-pretty": "^7.2.0",
+        "twig": "^1.15.4"
+    }
+}

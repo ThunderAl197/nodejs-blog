@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "promptOnClose": false,
+    "tasks": [
+        {
+            "label": "Build backend",
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "build:watch"
+            ],
+            "isBackground": true,
+            "runOptions": {
+                "instanceLimit": 1
+            }
+        }
+    ]
+}
